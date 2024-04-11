@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="contact.css">   
+</head>
+<body>
+    <h1>Contact Us</h1>
+
+    <p>Thank you for visiting our company's website and exploring our services. We value your feedback, inquiries, and collaboration opportunities. Please feel free to get in touch with us using the contact information below or by filling out the contact form.</p>
+
+    <h2>Contact Information:</h2>
+    <p>
+        <strong>Address:</strong><br>
+        BotWhiz<br>
+        Lake view Street<br>
+        Chennai, Tamilnadu - 600117<br>
+        India
+    </p>
+    <p><strong>Phone:</strong> 9987654321</p>
+    <p><strong>Email:</strong> <a href="mailto:BotWhiz@gmail.com">BotWhiz@gmail.com</a></p>
+    <p><strong>Business Hours:</strong><br>
+        Monday - Friday: 9:00 AM - 5:00 PM</p>
+
+    <h2>Contact Form:</h2>
+    <form id="contactForm" action="#" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+        <input type="submit" value="Submit" onclick="showSubmitMessage()">
+    </form>
+
+    <div class="footer">
+        <p>Follow us on social media:</p>
+        <ul class="social-icons">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+        <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+    </div>
+
+    <p id="submitMessage" style="display: none;">Form has been submitted!</p>
+
+    <script>
+        function showSubmitMessage() {
+            document.getElementById("submitMessage").style.display = "block";
+            setTimeout(function(){ 
+                document.getElementById("submitMessage").style.display = "none";
+            }, 3000); // Hide message after 3 seconds
+        }
+    </script>
+
+</body>
+</html>
